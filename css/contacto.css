@@ -1,0 +1,149 @@
+/* .contacto{
+    height: 100vh;
+} */
+
+.nav_contacto{
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    padding-top: 1rem;
+    width: 60%;
+    gap: 2rem;
+}
+
+.background_contacto{
+    background: #F2CB05;
+    height: 100vh;
+    width: 30%;
+}
+
+.nav_contacto-a{
+    background-color: #F2E7DC;
+    border: .5rem solid #F2E7DC;
+    border-radius: 10rem;
+}
+
+.nav_contacto-a:nth-child(4){
+    background-color: #6B9FBF;
+    border: .5rem solid #6B9FBF;
+    color: #F2E7DC;
+}
+
+.nav_contacto-a:nth-child(1):hover{
+    transition:  linear .2s;
+    background-color: #027373;
+    border: .5rem solid #027373;
+    color: #F2E7DC;
+}
+
+.nav_contacto-a:nth-child(2):hover{
+    transition:  linear .2s;
+    background-color: #038C7F;
+    border: .5rem solid #038C7F;
+    color: #F2E7DC;
+}
+
+.nav_contacto-a:nth-child(3):hover{
+    transition:  linear .2s;
+    background-color: #D96941;
+    border: .5rem solid #D96941;
+    color: #F2E7DC;
+}
+
+.nav_contacto-a:nth-child(4):hover{
+    transition:  linear .2s;
+    background-color: #F2E7DC;
+    border: .5rem solid #F2E7DC;
+    color: #000;
+
+}
+
+.container_contacto{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.ul_contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: end;
+    position: absolute;
+    right: 28%;
+}
+
+.button_contacto{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: .5em;
+    background-color: #F2E7DC;
+    border: .7rem solid #F2E7DC;
+    border-radius: 10rem;
+    height: max-content;
+    width: max-content;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1em;
+}
+
+.button_contacto:hover{
+    transition:  linear .2s;
+    background-color: #9CC1D9;
+    border-color: #9CC1D9;
+
+}
+
+.img_contacto{
+    height: 2em;
+}
+
+.contacto-resp{
+    display: none;
+}
+
+@media screen and ( max-width: 894px){
+    .nav_contacto{
+        display: none;
+    }
+}
+
+@media screen and ( max-width: 640px){
+    .ul_contacto{
+        right: 5%;
+    }
+    
+    .button_contacto{
+        outline: solid .1em;
+        outline-color: #000000;
+ 
+    }
+    
+    
+}
+
+@media screen and (max-width: 560px){
+    .contacto-resp{
+        display: block;
+        position: absolute;
+        margin: 1em;
+        background-color: #6B9FBF;
+        border: .5rem solid #6B9FBF;
+        color: #F2E7DC;
+        border-radius: 10rem;
+    }
+}
+
+@media screen and ( max-width: 380px){
+    .ul_contacto{
+        flex-direction: column-reverse;
+        right: 2%;
+    }
+
+    .imgC1 {
+        display: none;
+    }
+}

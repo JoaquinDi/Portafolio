@@ -1,0 +1,234 @@
+.nav_portafolio{
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    padding-top: 1rem;
+    width: 80%;
+    gap: 2rem;
+}
+
+.nav_portafolio-a{
+    background-color: #F2E7DC;
+    border: .5rem solid #F2E7DC;
+    border-radius: 10rem;
+}
+
+.nav_portafolio-a:nth-child(3){
+    background-color: #038C7F;
+    border: .5rem solid #038C7F;
+    color: #F2E7DC;
+}
+
+.nav_portafolio-a:nth-child(1):hover{
+    transition:  linear .2s;
+    background-color: #027373;
+    border: .5rem solid #027373;
+    color: #F2E7DC;
+}
+
+.nav_portafolio-a:nth-child(2):hover{
+    transition:  linear .2s;
+    background-color: #038C7F;
+    border: .5rem solid #038C7F;
+    color: #F2E7DC;
+}
+
+.nav_portafolio-a:nth-child(3):hover{
+    transition:  linear .2s;
+    background-color: #F2E7DC;
+    border: .5rem solid #F2E7DC;
+    color: #000;
+
+}
+
+.nav_portafolio-a:nth-child(4):hover{
+    transition:  linear .2s;
+    background-color: #F2CB05;
+    border: .5rem solid #F2CB05;
+
+}
+
+.portafolio{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.portafolio_bacground{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: #D96941;
+    height: 100vh;
+    width: 30%;
+}
+
+.carrousel{
+    width: 60%;
+    max-width: 120rem;
+    background-color: #6B9FBF;
+    position: absolute;
+    overflow-x: hidden;
+    left: 20%;
+    top: 225vh;
+    padding: 1em;
+    border-radius: 5px;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.carrousel .grande{
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.links_carrousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.titulo_carrousel{
+    font-size: 1.7em;
+}
+
+.button_carrousel{
+    border: .5rem solid #038C7F ;
+    background-color: #038C7F;
+    border-radius: 10rem;
+    transition: linear .2s ;
+}
+
+.button_carrousel:hover{
+    border-color: #D96941;
+    background-color: #D96941;
+}
+
+.img_carrousel{
+    height: 14em;
+    border-radius: 5px;
+}
+
+.carrousel .container_portafolio{
+    width: calc(100% / 4 );
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    color: #F2E7DC;
+}
+
+
+.carrousel .ul_puntos{
+    width: 100%;
+    padding: 0 0 1em 0 ;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .li_punto{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #9CC1D9;
+    border-radius: 100%;
+    margin: 1rem 1rem 0;
+}
+
+ .carrousel .li_punto.activo{
+    background-color: #038C7F;
+}
+
+.portafolio-resp{
+    display: none;
+}
+
+@media screen and ( max-width: 970px){
+    .container_portafolio{
+        flex-direction: column;
+        align-items: center;
+        overflow: none;
+    }
+    .img_carrousel{
+        height: auto;
+        width: 20em;
+    }
+    .carrousel{
+        height: 25em;
+        top: 215vh;
+    }
+
+    .carrousel .container_portafolio{
+        gap: 1em;
+    }
+
+    .links_carrousel{
+        gap: 1em;
+    }
+
+    .carrousel .grande{
+        padding: 1em 0;
+    }
+}
+
+@media screen and ( max-width: 894px){
+    .nav_portafolio{
+        display: none;
+    }
+    
+}
+
+@media screen and ( max-width: 676px){
+    .img_carrousel{
+        width: 70% ;
+    }
+
+    .carrousel{
+        width: 80%;
+        left: 0;
+        height: 30em;
+        top: 210vh;
+        margin-left: 6%;
+    }
+
+    .button_carrousel{
+        width: 100%;
+        height: 2em;
+        justify-content: center;
+        padding-top: 1em;
+    }
+
+    .links_carrousel{
+        width: 50%;
+        gap: 4em;
+    }
+    
+    .grande{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .portafolio-resp{
+        display: block;
+        position: absolute;
+        margin: 1em;
+        background-color: #027373;
+        border: .5rem solid #027373;
+        color: #F2E7DC;
+        border-radius: 10rem;
+        right: 0;
+    }
+}

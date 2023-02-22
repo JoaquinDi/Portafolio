@@ -1,0 +1,15 @@
+body{
+    background-color: #F2E7DC;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
