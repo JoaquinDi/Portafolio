@@ -6,7 +6,7 @@ const li_punto = document.querySelectorAll('.li_punto');
 li_punto.forEach( (cadaPunto , i )=>{
     li_punto[i].addEventListener('click', ()=>{
         let posicion = i;
-        let operacion = posicion * -25;
+        let operacion = posicion * -20;
         grande.style.transform = `translateX(${operacion}%)`;
 
         li_punto.forEach( (cadaPunto , i)=>(

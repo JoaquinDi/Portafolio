@@ -80,7 +80,7 @@
 }
 
 .carrousel .grande{
-    width: 400%;
+    width: 500%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -121,7 +121,7 @@
 }
 
 .carrousel .container_portafolio{
-    width: calc(100% / 4 );
+    width: calc(100% / 5 );
     min-height: 10vh;
     display: flex;
     justify-content: space-around;
